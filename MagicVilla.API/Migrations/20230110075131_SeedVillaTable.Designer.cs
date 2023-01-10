@@ -4,6 +4,7 @@ using MagicVilla.API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MagicVilla.API.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230110075131_SeedVillaTable")]
+    partial class SeedVillaTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -70,7 +73,7 @@ namespace MagicVilla.API.Migrations
                         {
                             Id = 1,
                             Amenity = "",
-                            CreatedDate = new DateTime(2023, 1, 10, 10, 52, 46, 119, DateTimeKind.Local).AddTicks(4357),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Details = "Huge villa",
                             ImageUrl = "https://pngtree.com/so/villa",
                             Name = "Royal Villa",
@@ -83,7 +86,7 @@ namespace MagicVilla.API.Migrations
                         {
                             Id = 2,
                             Amenity = "",
-                            CreatedDate = new DateTime(2023, 1, 10, 10, 52, 46, 119, DateTimeKind.Local).AddTicks(4367),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Details = "Extra ordinary villa",
                             ImageUrl = "https://pngtree.com/so/villa",
                             Name = "Premium Pool Villa",
@@ -96,7 +99,7 @@ namespace MagicVilla.API.Migrations
                         {
                             Id = 3,
                             Amenity = "",
-                            CreatedDate = new DateTime(2023, 1, 10, 10, 52, 46, 119, DateTimeKind.Local).AddTicks(4369),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Details = "Very huge pool villa",
                             ImageUrl = "https://pngtree.com/so/villa",
                             Name = "Luxury Pool Villa",
@@ -109,7 +112,7 @@ namespace MagicVilla.API.Migrations
                         {
                             Id = 4,
                             Amenity = "",
-                            CreatedDate = new DateTime(2023, 1, 10, 10, 52, 46, 119, DateTimeKind.Local).AddTicks(4370),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Details = "Very rare enjoyable villa",
                             ImageUrl = "https://pngtree.com/so/villa",
                             Name = "Diamond Villa",
@@ -122,7 +125,7 @@ namespace MagicVilla.API.Migrations
                         {
                             Id = 5,
                             Amenity = "",
-                            CreatedDate = new DateTime(2023, 1, 10, 10, 52, 46, 119, DateTimeKind.Local).AddTicks(4372),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Details = "8-10 people can stay",
                             ImageUrl = "https://pngtree.com/so/villa",
                             Name = "Diamond Pool Villa",
